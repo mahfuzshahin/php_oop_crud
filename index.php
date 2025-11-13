@@ -4,7 +4,8 @@ require_once 'controller/UserController.php';
 $controller = new StudentController();
 $userCont = new UserController();
 
-$action = $_GET['action'] ?? 'index';
+$action = $_GET['action'] ?? '';
+
 $id = $_GET['id'] ?? null;
 switch($action){
     case 'create':

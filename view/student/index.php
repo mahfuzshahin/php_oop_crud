@@ -37,10 +37,10 @@ require_once 'view/asset/nav.php';
                 <td><?php echo $row['email'] ?></td>
                 <td><?php echo $row['roll'] ?></td>
                 <td>
-                    <a href="index.php?action=edit&id=<?php echo $row['id'] ?>">edit</a>
+                    <a href="index.php?action=edit&id=<?php echo $row['id'] ?>" class="btn btn-success btn-sm">edit</a>
                 </td>
                 <td>
-                    <a href="index.php?action=delete&id=<?php echo $row['id'] ?>" onclick="return confirm('Are you Sure?')">delete</a>
+                    <a href="index.php?action=delete&id=<?php echo $row['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you Sure?')">delete</a>
                 </td>
             </tr>
           <?php  } ?>
